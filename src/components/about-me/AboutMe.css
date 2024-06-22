@@ -1,0 +1,33 @@
+.about-me-container {
+  /* display: grid;
+  grid-template-columns: 10fr auto; */
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  display: flex;
+  gap: 10rem;
+  margin-bottom: 12rem;
+}
+
+.about-me-header {
+  margin-bottom: 4rem;
+  /* font-size: 3rem; */
+}
+
+.about-me-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 60%;
+  flex-grow: 1;
+  font-size: 1.7rem;
+}
+
+.about-me-image-container {
+  max-width: 50rem;
+  flex-shrink: 1;
+  margin: 0 0 0 auto;
+}
+
+.about-me-image {
+  width: 100%;
+}

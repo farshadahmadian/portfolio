@@ -1,0 +1,18 @@
+.projects-section-container {
+  max-width: 180rem;
+  margin: 0 auto;
+}
+
+.projects-section-header {
+  text-align: left;
+  margin-bottom: 6rem;
+  font-size: 3rem;
+  border-bottom: 1px solid var(--color-foreground);
+  padding-bottom: 0.4rem;
+}
+
+/* .project-card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 6rem;
+} */

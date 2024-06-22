@@ -1,0 +1,11 @@
+.project-image-container {
+  /* max-width: 50%; */
+}
+
+/* .project-image-container-right {
+  margin: 0 0 0 auto;
+} */
+
+.project-image {
+  max-width: 40rem;
+}

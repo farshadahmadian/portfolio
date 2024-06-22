@@ -1,0 +1,25 @@
+.project-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+.project-card:not(:last-child) {
+  margin-bottom: 10rem;
+}
+
+/* CARD */
+
+/* .project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  border: 1px solid #000;
+} */
+
+/* .project-card:not(:last-child) {
+  margin-bottom: 10rem;
+} */

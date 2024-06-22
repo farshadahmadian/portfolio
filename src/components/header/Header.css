@@ -1,0 +1,21 @@
+.header-container {
+  /* width: 100vw; */
+  height: 100vh;
+  background: linear-gradient(to right, #29332db9, #437724bf),
+    url("/public/header2.jpeg");
+
+  background-position: center right;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  /* font-size: 4rem; */
+  color: #fff;
+}
+
+.header-text {
+  align-self: flex-start;
+  margin: auto;
+  /* font-size: 6rem; */
+}
