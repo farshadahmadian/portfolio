@@ -1,14 +1,29 @@
+import { useEffect, useState } from "react";
 import Header from "./components/header/Header";
 import Main from "./components/main/Main";
 import "./App.css";
-import ToggleTheme from "./components/toggle-theme/ToggleTheme";
 
 function App() {
+  const [isMenuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenuHandler = function () {
+    setMenuOpen((prevState) => !prevState);
+  };
+
+  const closeModalHandler = function () {
+    setMenuOpen((prevState) => !prevState);
+  };
+
+  useEffect(() => {}, [isMenuOpen]);
+
   return (
-    <div>
-      <Header />
+    <div className="app">
+      <Header
+        onToggleMenu={toggleMenuHandler}
+        onCloseModal={closeModalHandler}
+        isMenuOpen={isMenuOpen}
+      />
       <Main />
-      <ToggleTheme />
     </div>
   );
 }

@@ -1,4 +1,12 @@
 .main {
   padding: 6rem 12rem;
-  /* background-color: lightcoral; */
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .main {
+    width: 100%;
+    padding: 6rem 6rem;
+  }
 }

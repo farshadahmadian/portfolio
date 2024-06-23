@@ -4,3 +4,9 @@
   display: flex;
   gap: 2rem;
 }
+
+@media screen and (max-width: 800px) {
+  .navbar-links-container {
+    display: none;
+  }
+}

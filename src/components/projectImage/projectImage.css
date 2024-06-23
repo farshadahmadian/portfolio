@@ -1,11 +1,17 @@
 .project-image-container {
-  /* max-width: 50%; */
+  height: 22.5rem;
 }
 
-/* .project-image-container-right {
-  margin: 0 0 0 auto;
-} */
+.project-image-container-right {
+  justify-self: right;
+}
+
+.project-image-container-left {
+  justify-self: left;
+}
 
 .project-image {
-  max-width: 40rem;
+  width: 40rem;
+  height: 100%;
+  border-radius: 10px;
 }

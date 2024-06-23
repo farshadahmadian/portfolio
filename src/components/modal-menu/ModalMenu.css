@@ -1,0 +1,18 @@
+.modal-menu-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.close-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  width: 1.7rem;
+  color: var(--color-foregroundcolor);
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+}

@@ -5,7 +5,6 @@ const Links = () => {
     <div className="navbar-links-container">
       <p>About Me</p>
       <p>Projects</p>
-      <p>Link3</p>
     </div>
   );
 };

@@ -1,0 +1,19 @@
+.hamburger-btn-container {
+  display: none;
+  margin: 0 0 0 auto;
+}
+
+@media screen and (max-width: 800px) {
+  .hamburger-btn-container {
+    display: block;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .hamburger-btn {
+    width: 1.7rem;
+		display: flex;
+		align-items: center;
+  }
+}

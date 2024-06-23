@@ -9,7 +9,16 @@ const ProjectDescription = ({ title, description, url, isRightCard }) => {
     >
       <h3 className="project-header">{title}</h3>
       <p className="project-description">{description}</p>
-      <p className="project-url">{url}</p>
+      <div className="project-link-container">
+        <a href={url} className="project-url" target="_blank" rel="noreferrer">
+          <span>to github repository </span>
+          <img
+            className="icon icon-arrow-forward"
+            src="./arrow_forward2.svg"
+            alt="Arrow Forward"
+          />
+        </a>
+      </div>
     </div>
   );
 };
