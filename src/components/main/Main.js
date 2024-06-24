@@ -2,11 +2,11 @@ import AboutMe from "../about-me/Aboutme";
 import Projects from "../projects/Projects";
 import "./Main.css";
 
-const Main = () => {
+const Main = ({ isDark }) => {
   return (
     <main className="main">
       <AboutMe />
-      <Projects />
+      <Projects isDark={isDark} />
     </main>
   );
 };

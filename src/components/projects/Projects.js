@@ -4,7 +4,7 @@ import "./Projects.css";
 
 import { projects } from "../../data";
 
-const Projects = () => {
+const Projects = ({ isDark }) => {
   return (
     <article className="projects-section-container">
       <h2 className="projects-section-header">Some Projects</h2>
@@ -15,6 +15,7 @@ const Projects = () => {
               key={project.id}
               project={project}
               isRightCard={i % 2 === 0 ? false : true}
+              isDark={isDark}
             />
           );
         })}

@@ -1,12 +1,38 @@
 .main {
-  padding: 6rem 12rem;
-  max-width: 120rem;
+  padding: 12rem 12rem;
+  max-width: 180rem;
   margin: 0 auto;
 }
 
 @media screen and (max-width: 1200px) {
   .main {
-    width: 100%;
-    padding: 6rem 6rem;
+    width: 80%;
+    padding: 12rem 6rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .main {
+    /* width: 80%; */
+    padding: 12rem 3rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .main {
+    /* width: 100%; */
+    padding: 12rem 3rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .main {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .main {
+    padding: 8rem 1rem;
   }
 }

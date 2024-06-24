@@ -13,7 +13,8 @@ const AboutMe = () => {
         </p>
       </div>
       <div className="about-me-image-container">
-        <img className="about-me-image" src="./header.jpeg" alt="Farshad" />
+        {/* <img className="about-me-image" src="./header.jpeg" alt="Farshad" /> */}
+        <img className="about-me-image" src="" alt="Farshad" />
       </div>
     </article>
   );

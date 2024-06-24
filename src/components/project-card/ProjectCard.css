@@ -1,4 +1,4 @@
-.project-card {
+.project-card-light {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
@@ -7,8 +7,17 @@
   transition: all 1s;
 }
 
+.project-card-dark {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* justify-items: center; */
+  align-items: center;
+  gap: 4rem;
+  transition: all 1s;
+}
+
 .project-card:not(:last-child) {
-  margin-bottom: 16rem;
+  margin-bottom: 20rem;
 }
 
 @media screen and (max-width: 1200px) {
@@ -20,15 +29,33 @@
   }
 
   .project-card {
-    width: 70%;
+    width: 90%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    border: 1px solid var(--color-foreground);
-    border-radius: 10px;
+    border-radius: 5px;
     overflow: hidden;
     gap: 2rem;
-    margin-bottom: 0;
+    /* margin-bottom: 0; */
+    margin: 0;
+  }
+
+  .project-card-dark-left,
+  .project-card-light-left {
+    justify-self: start;
+  }
+
+  .project-card-dark-right,
+  .project-card-light-right {
+    justify-self: end;
+  }
+
+  .project-card-light {
+    border: 1px solid var(--color-foreground);
+  }
+
+  .project-card-dark {
+    border: 1px solid var(--color-background);
   }
 
   .project-card:not(:last-child) {
@@ -76,23 +103,18 @@
     margin-bottom: 0;
   }
 
-  .project-link-container {
-    margin: auto 0 0 0;
-  }
-
   .project-url {
-    display: block;
     margin-bottom: 1rem;
   }
 }
 
 @media screen and (max-width: 1000px) {
   .project-card {
-    width: 80%;
+    /* width: 80%; */
   }
 }
 
-@media screen and (max-width: 800px) {
+/* @media screen and (max-width: 800px) {
   .project-card-container {
     grid-template-columns: 1fr;
   }
@@ -100,9 +122,19 @@
   .project-card {
     width: 45%;
   }
+} */
+
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 9px;
+  }
+
+  .project-card {
+    width: 100%;
+  }
 }
 
-@media screen and (max-width: 700px) {
+/* @media screen and (max-width: 700px) {
   html {
     font-size: 9px;
   }
@@ -110,16 +142,37 @@
   .project-card {
     width: 50%;
   }
-}
+} */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
+  .project-card-container {
+    grid-template-columns: 1fr;
+  }
+
   .project-card {
+    justify-self: center;
     width: 60%;
   }
 }
 
-@media screen and (max-width: 500px) {
+/* @media screen and (max-width: 600px) {
+  .project-card {
+    width: 60%;
+  }
+} */
+
+@media screen and (max-width: 550px) {
   .project-card {
     width: 70%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 8px;
+  }
+
+  .project-card {
+    width: 90%;
   }
 }

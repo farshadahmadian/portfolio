@@ -13,8 +13,10 @@
 }
 
 :root {
-  --color-background: #fff;
-  --color-foreground: #000;
+  --color-background: #f0f0f0;
+  --color-foreground: #282828;
+  --color-primary: #29332db9;
+  --color-secondary: #437724bf;
 }
 
 html {
@@ -53,7 +55,7 @@ p {
 
 @media (prefers-color-scheme: dark) {
   body {
-    background-color: #000;
-    color: #fff;
+    background-color: var(--color-foreground);
+    color: var(--color-background);
   }
 }

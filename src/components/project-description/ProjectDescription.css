@@ -1,5 +1,6 @@
 .project-description-container {
-  max-width: 40rem;
+  /* max-width: 40rem; */
+  max-width: 60rem;
   text-align: center;
 }
 
@@ -23,22 +24,35 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0.4rem;
   font-size: 1.4rem;
+  margin: auto 0 0 0;
 }
 
 .project-url {
   display: flex;
+  gap: 0.4rem;
   align-items: center;
 }
 
-.project-url:hover,
-.project-url:active {
+.project-url-dark:hover,
+.project-url-dark:active {
+  color: var(--color-background);
   text-decoration: none;
 }
 
-.project-url:visited,
-.project-url:link {
+.project-url-light:hover,
+.project-url-light:active {
+  color: var(--color-foreground);
+  text-decoration: none;
+}
+
+.project-url-dark:visited,
+.project-url-dark:link {
+  color: var(--color-background);
+}
+
+.project-url-light:visited,
+.project-url-light:link {
   color: var(--color-foreground);
 }
 

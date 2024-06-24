@@ -5,7 +5,7 @@ export const projects = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem autem quaerat odio tempora cum beatae esse, explicabo fugit exercitationem numquam enim aut asperiores illum ducimus reiciendis laboriosam tempore vitae?",
     url: "https://github.com/farshadahmadian/so_long",
-    image: "./solong.png",
+    image: "./webserve.jpeg",
   },
 
   {
@@ -14,7 +14,7 @@ export const projects = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem autem quaerat om tempore vitae?",
     url: "https://github.com/farshadahmadian/webserv",
-    image: "./webserve3.jpeg",
+    image: "./webserve.jpeg",
   },
   {
     id: 3,
@@ -22,14 +22,14 @@ export const projects = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem autem quaerat odio tempora cum beatae esse, explicabo fugit exercitationem numquam enim aut asperiores illum ducimus reiciendis laboriosam magnam tempore vitae?",
     url: "https://github.com/farshadahmadian/inception",
-    image: "./docker.jpeg",
+    image: "./webserve.jpeg",
   },
   {
     id: 4,
     title: "Minishell",
     description: "Lorem ipsum dolnam tempore vitae?",
     url: "https://github.com/farshadahmadian/minishell",
-    image: "./shell5.jpg",
+    image: "./webserve.jpeg",
   },
   {
     id: 5,
@@ -37,6 +37,6 @@ export const projects = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem autem quaerat odio tempora cum beatae esse, explicabo fugit exercitationem numquam enim aut asperiores illum ducimus reiciendis laboriosam magnam tempore vitae?",
     url: "https://github.com/farshadahmadian/cub3D",
-    image: "./cub3d.jpeg",
+    image: "./webserve.jpeg",
   },
 ];

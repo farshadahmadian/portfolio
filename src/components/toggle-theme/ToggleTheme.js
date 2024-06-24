@@ -1,6 +1,5 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { DarkModeSwitch } from "react-toggle-dark-mode";
-import { useMediaQuery } from "react-responsive";
 import "./ToggleTheme.css";
 
 const defaultProperties = {
@@ -37,24 +36,11 @@ const defaultProperties = {
   springConfig: { mass: 4, tension: 250, friction: 35 },
 };
 
-const ToggleTheme = () => {
-  const [isDark, setIsDark] = useState(true);
-
+const ToggleTheme = ({ isDark, onToggleTheme }) => {
   useEffect(() => {
     if (isDark) document.querySelector(".app").classList.add("dark");
     else document.querySelector(".dark").classList.remove("dark");
   }, [isDark]);
-
-  const preferedTheme = useMediaQuery(
-    { query: "(prefers-color-scheme: dark)" },
-    undefined,
-    (isSystemDark) => setIsDark(isSystemDark)
-  );
-
-  const changeHandler = (isLight) => {
-    console.log(isLight);
-    setIsDark(isLight);
-  };
 
   return (
     <DarkModeSwitch
@@ -62,7 +48,7 @@ const ToggleTheme = () => {
       animationProperties={defaultProperties}
       size={17}
       checked={isDark}
-      onChange={changeHandler}
+      onChange={onToggleTheme}
     />
   );
 };
