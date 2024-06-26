@@ -24,14 +24,14 @@ const ProjectDescription = ({
           target="_blank"
           rel="noreferrer"
         >
-          <span>to github repository </span>
-          <img
+          <span className="description-repository">to github repository </span>
+          {/* <img
             className="icon icon-arrow-forward"
             src={
               isDark ? "./arrow_forward_white.svg" : "./arrow_forward_black.svg"
             }
             alt="Arrow Forward"
-          />
+          /> */}
         </a>
       </div>
     </div>

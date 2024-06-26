@@ -6,11 +6,17 @@
   gap: 2rem;
 }
 
+.link-open-menu {
+  font-size: 3rem;
+  color: var(--color-ternary);
+  text-decoration: none;
+}
+
 .close-btn {
   background-color: transparent;
   border: none;
   cursor: pointer;
-  width: 1.7rem;
+  width: 3rem;
   color: var(--color-foregroundcolor);
   position: absolute;
   top: 2rem;

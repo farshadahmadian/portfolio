@@ -12,8 +12,8 @@
   }
 
   .hamburger-btn {
-    width: 1.7rem;
-		display: flex;
-		align-items: center;
+    width: 3rem;
+    display: flex;
+    align-items: center;
   }
 }

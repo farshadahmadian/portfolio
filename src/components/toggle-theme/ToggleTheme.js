@@ -38,15 +38,15 @@ const defaultProperties = {
 
 const ToggleTheme = ({ isDark, onToggleTheme }) => {
   useEffect(() => {
-    if (isDark) document.querySelector(".app").classList.add("dark");
-    else document.querySelector(".dark").classList.remove("dark");
+    if (isDark) document.querySelector(".main-container").classList.add("dark");
+    else document.querySelector(".main-container").classList.remove("dark");
   }, [isDark]);
 
   return (
     <DarkModeSwitch
       className="theme"
       animationProperties={defaultProperties}
-      size={17}
+      size={22}
       checked={isDark}
       onChange={onToggleTheme}
     />

@@ -5,6 +5,22 @@
   gap: 2rem;
 }
 
+.link-closed-menu {
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.link-closed-menu:visited,
+.link-closed-menu:link {
+  color: #fff;
+}
+
+.link-closed-menu:hover,
+.link-closed-menu:active {
+  color: var(--color-ternary);
+}
+
 @media screen and (max-width: 800px) {
   .navbar-links-container {
     display: none;

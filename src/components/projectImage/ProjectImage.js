@@ -9,7 +9,7 @@ const ProjectImage = ({ image, isRightCard }) => {
           : "project-image-container-left"
       } project-image-container`}
     >
-      <img className="project-image" src={image} alt="" />
+      <img className="project-image" src={image} alt={image} />
     </div>
   );
 };

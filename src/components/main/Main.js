@@ -4,10 +4,12 @@ import "./Main.css";
 
 const Main = ({ isDark }) => {
   return (
-    <main className="main">
-      <AboutMe />
-      <Projects isDark={isDark} />
-    </main>
+    <div className="main-container">
+      <main className="main">
+        <AboutMe />
+        <Projects isDark={isDark} />
+      </main>
+    </div>
   );
 };
 

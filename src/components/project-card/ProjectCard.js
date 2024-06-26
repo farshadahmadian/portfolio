@@ -9,7 +9,7 @@ const ProjectCard = ({ project, isRightCard, isDark }) => {
         className={`${
           isDark
             ? "project-card-dark project-card-dark-right"
-            : "project-card-light project-card-right-light"
+            : "project-card-light project-card-light-right-"
         } project-card`}
       >
         <ProjectDescription
@@ -28,7 +28,7 @@ const ProjectCard = ({ project, isRightCard, isDark }) => {
         className={`${
           isDark
             ? "project-card-dark project-card-dark-left"
-            : "project-card-light project-card-left-light"
+            : "project-card-light project-card-light-left"
         } project-card`}
       >
         <ProjectImage image={project.image} isRightCard={isRightCard} />

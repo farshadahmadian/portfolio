@@ -2,15 +2,16 @@ import "./ContactForm.css";
 
 const ContactForm = () => {
   return (
-    <div className="form-container">
-      <h2 className="form-header">Contact</h2>
+    <div id="contact" className="form-container">
       <form
         className="form-contact"
         method="post"
         name="contact"
-        netlify
-        action="/thank-you.html"
+        netlify="true"
+        action="/response.html"
+        autoComplete="on"
       >
+        <h2 className="form-header">Contact</h2>
         <input type="hidden" name="form-name" value="contact" />
         <div className="input-group">
           <div className="input-container">
@@ -58,7 +59,6 @@ const ContactForm = () => {
               type="text"
               name="subject"
               placeholder="subject"
-              required={true}
             />
           </div>
         </div>
@@ -76,7 +76,7 @@ const ContactForm = () => {
           ></textarea>
         </div>
         <button className="btn contact-form-btn" type="submit">
-          Send
+          <span>Send</span>
         </button>
       </form>
     </div>

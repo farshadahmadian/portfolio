@@ -23,7 +23,13 @@ const Header = ({
           isDark={isDark}
           onToggleTheme={onToggleTheme}
         />
-        <h1 className="header-text">Welcome</h1>
+        {/* <h1 className="header-text">Welcome</h1> */}
+        <div className="banner-container">
+          <div className="banner-text">left</div>
+          <div className="banner-image-container">
+            {/* <img className="banner-image" src="./farshad.jpeg" alt="Banner" /> */}
+          </div>
+        </div>
       </header>
       {isMenuOpen && (
         <Modal>

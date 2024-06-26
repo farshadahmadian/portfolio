@@ -6,7 +6,6 @@ const Footer = ({ isDark, children }) => {
     <div className="footer">
       {children}
       <div className="footer-text">
-        <p>Farshad Ahmadian Yazdi</p>
         <div className="footer-contacts">
           <a
             href="https://github.com/farshadahmadian"
@@ -33,6 +32,7 @@ const Footer = ({ isDark, children }) => {
             />
           </a>
         </div>
+        <p>Farshad Ahmadian Yazdi</p>
       </div>
     </div>
   );

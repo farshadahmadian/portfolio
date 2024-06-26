@@ -8,7 +8,7 @@ import ContactForm from "../src/components/ContactForm/ContactForm";
 
 function App() {
   const [isMenuOpen, setMenuOpen] = useState(false);
-  const [isDark, setIsDark] = useState(true);
+  const [isDark, setIsDark] = useState(false);
 
   const toggleMenuHandler = function () {
     setMenuOpen((prevState) => !prevState);
@@ -21,7 +21,7 @@ function App() {
   useEffect(() => {}, [isMenuOpen]);
 
   const preferedTheme = useMediaQuery(
-    { query: "(prefers-color-scheme: dark)" },
+    { query: "(prefers-color-scheme: light)" },
     undefined,
     (isSystemDark) => setIsDark(isSystemDark)
   );
