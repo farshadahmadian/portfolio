@@ -6,9 +6,14 @@ const AboutMe = () => {
     <article id="about-me" className="about-me-container">
       <div className="about-me-text-container">
         <h2 className="about-me-header">About Me</h2>
-        <p className="about-me-text">{aboutMe}</p>
+        <p className="about-me-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. A molestiae
+          atque facere ullam repellendus officiis nisi tempora. Dicta, nobis
+          quae modi, quos facere consequatur fuga aspernatur inventore culpa
+          neque nulla.
+        </p>
         <p>
-          {toCV}
+          {/* {toCV} */}
           <a
             className="to-cv"
             href="https://farshadahmadian.github.io/cv"

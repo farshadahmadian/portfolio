@@ -25,10 +25,11 @@ const Header = ({
         />
         {/* <h1 className="header-text">Welcome</h1> */}
         <div className="banner-container">
-          <div className="banner-text">left</div>
-          <div className="banner-image-container">
-            {/* <img className="banner-image" src="./farshad.jpeg" alt="Banner" /> */}
+          <div className="banner-text">
+            <p style={{ fontSize: "6rem" }}>Hi,</p>
+            <h1>I'm Farshad</h1>
           </div>
+          <div className="banner-image-container"></div>
         </div>
       </header>
       {isMenuOpen && (
