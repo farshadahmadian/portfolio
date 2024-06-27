@@ -74,10 +74,40 @@
   /* border: 1px solid #fff; */
   color: #fff;
   background-color: var(--color-ternary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  transition: all 0.4s;
 }
 
 .contact-form-btn:active {
   box-shadow: 3px 3px 8px 2px #3a3a3a;
+}
+
+.icon-send {
+  /* display: none; */
+  transform: translateX(-100%);
+  opacity: 0;
+  width: 0;
+  transition: all 0.4s;
+}
+
+.contact-form-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 4px 10px 20px 0 #00000039;
+}
+
+.contact-form-btn:active {
+  transform: translateY(0);
+  box-shadow: 2px 5px 10px 0 #00000039;
+}
+
+.contact-form-btn:hover .icon-send {
+  transform: translateX(0);
+  /* display: block; */
+  width: 1.8rem;
+  opacity: 1;
 }
 
 @media screen and (max-width: 1200px) {

@@ -1,4 +1,3 @@
-import { aboutMe, toCV } from "../../data";
 import "./AboutMe.css";
 
 const AboutMe = () => {
@@ -6,28 +5,43 @@ const AboutMe = () => {
     <article id="about-me" className="about-me-container">
       <div className="about-me-text-container">
         <h2 className="about-me-header">About Me</h2>
-        <p className="about-me-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. A molestiae
-          atque facere ullam repellendus officiis nisi tempora. Dicta, nobis
-          quae modi, quos facere consequatur fuga aspernatur inventore culpa
-          neque nulla.
-        </p>
-        <p>
-          {/* {toCV} */}
-          <a
-            className="to-cv"
-            href="https://farshadahmadian.github.io/cv"
-            target="_blank"
-            rel="noreferrer"
-          >
-            here
-          </a>
-          .
-        </p>
+        <div className="about-me-text">
+          <p>
+            With over a decade of experience building landing pages for
+            startups, I've developed my skills in creating dynamic and
+            user-friendly web solutions. While I enjoyed my work, I looked for
+            more challenging and fulfilling projects.
+          </p>
+          <p>
+            In 2022, I discovered 42 Heilbronn, which provided the perfect
+            opportunity to transform my career. I decided to focus on back-end
+            development and software development as a whole. At 42 Heilbronn, I
+            dedicated my time to mastering C and C++, significantly improving my
+            programming skills.
+          </p>
+          <p>
+            My passion for continuous learning drives me to stay updated with
+            the rapidly changing world of software development and technology.
+            Each day, I strive to acquire new knowledge and improve my skills to
+            contribute effectively to innovative projects.
+          </p>
+          <p>
+            Feel free to check out my{" "}
+            <a
+              className="to-cv"
+              href="https://farshadahmadian.github.io/cv"
+              target="_blank"
+              rel="noreferrer"
+            >
+              CV here
+            </a>
+            .
+          </p>
+        </div>
       </div>
-      <div className="about-me-image-container">
-        {/* <img className="about-me-image" src="./header.jpeg" alt="Farshad" /> */}
-      </div>
+      {/*   <div className="about-me-image-container">
+        <img className="about-me-image" src="./header.jpeg" alt="Farshad" />
+      </div> */}
     </article>
   );
 };

@@ -1,3 +1,4 @@
+import Input from "../input/Input";
 import "./ContactForm.css";
 
 const ContactForm = () => {
@@ -14,53 +15,32 @@ const ContactForm = () => {
         <h2 className="form-header">Contact</h2>
         <input type="hidden" name="form-name" value="contact" />
         <div className="input-group">
-          <div className="input-container">
-            <label hidden={true} htmlFor="first-name">
-              First Name
-            </label>
-            <input
-              className="input contact-input input-first-name"
-              type="text"
-              name="first-name"
-              placeholder="First Name"
-            />
-          </div>
-          <div className="input-container">
-            <label hidden={true} htmlFor="last-name">
-              Name
-            </label>
-            <input
-              className="input contact-input input-last-name"
-              type="text"
-              name="last-name"
-              placeholder="Last Name"
-            />
-          </div>
+          <Input
+            className="input-first-name"
+            type="text"
+            name="first-name"
+            placeHolder="First Name"
+          />
+          <Input
+            className="input-last-name"
+            type="text"
+            name="last-name"
+            placeHolder="Last Name"
+          />
         </div>
         <div className="input-group">
-          <div className="input-container">
-            <label hidden={true} htmlFor="email">
-              Email
-            </label>
-            <input
-              className="input contact-input input-email"
-              type="email"
-              name="email"
-              placeholder="email*"
-              required={true}
-            />
-          </div>
-          <div className="input-container">
-            <label hidden={true} htmlFor="subject">
-              Subject
-            </label>
-            <input
-              className="input contact-input input-subject"
-              type="text"
-              name="subject"
-              placeholder="subject"
-            />
-          </div>
+          <Input
+            className="input-email"
+            type="email"
+            name="email"
+            placeHolder="Email*"
+          />
+          <Input
+            className="input-subject"
+            type="text"
+            name="subject"
+            placeHolder="Subject"
+          />
         </div>
         <div className="input-container">
           <label hidden={true} htmlFor="message">
@@ -71,12 +51,15 @@ const ContactForm = () => {
             name="message"
             rows={5}
             spellCheck={true}
-            placeholder="message*"
+            placeholder="Message*"
             required={true}
           ></textarea>
         </div>
         <button className="btn contact-form-btn" type="submit">
           <span>Send</span>
+          {/* <div className="icon-send-container"> */}
+          <img className="icon icon-send" src="./send5.png" alt="Send" />
+          {/* </div> */}
         </button>
       </form>
     </div>

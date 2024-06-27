@@ -6,15 +6,6 @@
   height: 10rem;
 }
 
-.logo-container {
-  width: 5rem;
-}
-
-.logo {
-  width: 100%;
-  border-radius: 100%;
-}
-
 .links-container {
   margin: 0 0 0 auto;
   display: flex;
