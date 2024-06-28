@@ -6,7 +6,7 @@ import "./Navbar.css";
 
 const Navbar = ({ onToggleMenu, isMenuOpen, isDark, onToggleTheme }) => {
   return (
-    <nav className="navbar-container">
+    <nav className={!isMenuOpen ? "navbar-container" : "hidden"}>
       <Logo />
       <div className="links-container">
         <Links />

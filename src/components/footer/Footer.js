@@ -20,7 +20,7 @@ const Footer = ({ isDark, children }) => {
             />
           </a>
           <a
-            href="linkedin.com/in/farshad-ahmadian-yazdi"
+            href="https://linkedin.com/in/farshad-ahmadian-yazdi"
             target="_blank"
             rel="noreferrer"
           >

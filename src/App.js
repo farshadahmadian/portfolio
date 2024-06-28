@@ -4,7 +4,8 @@ import Header from "./components/header/Header";
 import Main from "./components/main/Main";
 import "./App.css";
 import Footer from "./components/footer/Footer";
-import ContactForm from "../src/components/ContactForm/ContactForm";
+import ContactForm from "./components/ContactForm/ContactForm";
+import ToTop from "./components/to-top/ToTop";
 
 function App() {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -14,11 +15,19 @@ function App() {
     setMenuOpen((prevState) => !prevState);
   };
 
-  const closeModalHandler = function () {
-    setMenuOpen((prevState) => !prevState);
-  };
+  // const closeModalHandler = function () {
+  //   setMenuOpen((prevState) => !prevState);
+  // };
 
-  useEffect(() => {}, [isMenuOpen]);
+  useEffect(() => {
+    const handleKeyDown = (event) => {
+      if (event.key === "Escape" && isMenuOpen)
+        setMenuOpen((prevState) => !prevState);
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [isMenuOpen]);
 
   const preferedTheme = useMediaQuery(
     { query: "(prefers-color-scheme: light)" },
@@ -34,7 +43,7 @@ function App() {
     <div className="app">
       <Header
         onToggleMenu={toggleMenuHandler}
-        onCloseModal={closeModalHandler}
+        onCloseModal={toggleMenuHandler}
         isMenuOpen={isMenuOpen}
         isDark={isDark}
         onToggleTheme={toggleThemeHandler}
@@ -43,6 +52,7 @@ function App() {
       <Footer isDark={isDark}>
         <ContactForm />
       </Footer>
+      <ToTop />
     </div>
   );
 }

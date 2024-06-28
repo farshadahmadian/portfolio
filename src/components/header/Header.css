@@ -2,7 +2,7 @@
   position: relative;
 
   height: 100vh;
-  background: linear-gradient(to right, #023047f5, #219dbcf6);
+  background: linear-gradient(to right, #022f45eb, #219cbaeb);
   /* url("/public/farshad.jpeg"); */
 
   /* background-position: right;
@@ -12,6 +12,10 @@
   display: flex;
   flex-direction: column;
   color: #fff;
+}
+
+.hidden {
+  display: none;
 }
 
 .banner-container {
@@ -40,7 +44,7 @@
   z-index: -1;
 }
 
-.banner-text {
+.banner-text-container {
   /* margin-left: 6rem;
   margin-top: 10rem; */
 
@@ -62,8 +66,9 @@
   opacity: 0.04;
 } */
 
-.banner-text p {
+.banner-text {
   font-size: 6rem;
+  color: var(--color-background);
 }
 
 .header-text {
@@ -80,19 +85,13 @@
 
 .header-container-blur {
   height: 100vh;
-  background: linear-gradient(
-    to right,
-    var(--color-primary),
-    var(--color-secondary)
-  );
-  /* ,    url("/public/header2.jpeg"); */
-  background-position: center right;
+  background: linear-gradient(to right, #022f45eb, #219cbaeb);
+  /* background-position: center right;
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
-  flex-direction: column;
-  /* color: var(--color-foreground); */
-  filter: blur(25px) opacity(70%);
+  flex-direction: column; */
+  filter: blur(5px) opacity(80%);
 }
 
 @keyframes movein {
@@ -124,7 +123,7 @@
     font-size: 7rem;
   }
 
-  .banner-text p {
+  .banner-text-container p {
     font-size: 5rem;
   }
 }
@@ -155,7 +154,7 @@
 
 	
 
-  .banner-text {
+  .banner-text-container {
     display: none;
   }
 
@@ -169,7 +168,7 @@
     font-size: 5rem;
   }
 
-  .banner-text p {
+  .banner-text-container p {
     font-size: 3.4rem;
   }
 }
@@ -183,6 +182,11 @@
 @media screen and (max-width: 850px) {
   .banner-container {
     grid-template-columns: 1fr;
+    /* background-image: url("/public/farshad.png");
+    z-index: -1;
+    background-size: cover;
+    background-position: center top 20%;
+    background-repeat: no-repeat; */
   }
 
   .banner-image-container {
@@ -190,21 +194,20 @@
   }
 
   .header-container {
-    background: linear-gradient(to right, #023047f5, #219dbcf6),
+    background: linear-gradient(to right, #022f45eb, #219cbaeb),
       url("/public/farshad.png");
 
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    /* z-index: -1; */
   }
 
-  .banner-text {
+  .banner-text-container {
     /* margin: 5rem auto; */
     /* margin: auto; */
     /* align-self: center; */
     /* text-align: center; */
-    transform: translateY(6rem);
+    transform: translateY(12rem);
   }
 }
 

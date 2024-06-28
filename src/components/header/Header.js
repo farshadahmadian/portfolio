@@ -13,6 +13,7 @@ const Header = ({
   return (
     <>
       <header
+        id="header"
         className={`${
           !isMenuOpen ? "header-container" : "header-container-blur"
         }`}
@@ -23,12 +24,15 @@ const Header = ({
           isDark={isDark}
           onToggleTheme={onToggleTheme}
         />
-        <div className="banner-container">
-          <div className="banner-text">
-            <p>Hi,</p>
+        <div className={!isMenuOpen ? "banner-container" : "hidden"}>
+          <div className="banner-text-container">
+            <p className="banner-text">Hi,</p>
             <h1>I'm Farshad</h1>
           </div>
-          <div className="banner-image-container"></div>
+          <div
+            className="banner-image-container"
+            style={isMenuOpen ? { background: "transparent" } : {}}
+          ></div>
         </div>
       </header>
       {isMenuOpen && (

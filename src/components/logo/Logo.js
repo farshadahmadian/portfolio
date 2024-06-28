@@ -8,7 +8,7 @@ const Logo = () => {
   return (
     <>
       <div className="logo-container" onClick={clickHandler}>
-        <img className="logo" src="./farshad.png" alt="Logo" />
+        <img className="logo" src="./logo.png" alt="Logo" />
       </div>
     </>
   );
