@@ -12,7 +12,13 @@ const ContactForm = () => {
         action="/response.html"
         autoComplete="on"
       >
-        <h2 className="form-header">Contact</h2>
+        <div className="form-header-container">
+          <h2 className="form-header">Contact</h2>
+          <p>
+            While you're here, why not drop me a line? I'd love to hear from
+            you! 😉
+          </p>
+        </div>
         <input type="hidden" name="form-name" value="contact" />
         <div className="input-group">
           <Input

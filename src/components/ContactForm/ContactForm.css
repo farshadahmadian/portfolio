@@ -6,9 +6,13 @@
   width: 80%;
 }
 
+.form-header-container {
+  margin-bottom: 4rem;
+}
+
 .form-header {
   color: var(--color-ternary);
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .form-contact {
@@ -18,6 +22,10 @@
   flex-direction: column;
   gap: 3rem;
   /* max-width: 60rem; */
+}
+
+.form-contact p {
+  font-size: 1.7rem;
 }
 
 .input-group {

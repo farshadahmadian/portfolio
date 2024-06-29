@@ -5,6 +5,8 @@ import "./Projects.css";
 import { projects } from "../../data";
 import { useState } from "react";
 
+const initialProjectsNum = 5;
+
 const Projects = ({ isDark }) => {
   const [projectsList, setProjectsList] = useState(projects);
   const [isAllProjects, setIsAllProjects] = useState(false);
@@ -13,7 +15,7 @@ const Projects = ({ isDark }) => {
     setIsAllProjects((prevState) => !prevState);
     setProjectsList((prevState) => {
       return isAllProjects
-        ? [...prevState.filter((_project, i) => i < 4)]
+        ? [...prevState.filter((_project, i) => i < initialProjectsNum)]
         : projects;
     });
   };
@@ -23,7 +25,9 @@ const Projects = ({ isDark }) => {
       <h2 className="projects-section-header">Some Projects</h2>
       <ul className="project-card-container">
         {projectsList
-          .filter((_project, i) => (!isAllProjects ? i < 4 : true))
+          .filter((_project, i) =>
+            !isAllProjects ? i < initialProjectsNum : true
+          )
           .map((project, i) => {
             return (
               <ProjectCard
