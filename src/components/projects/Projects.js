@@ -1,4 +1,3 @@
-// import ControlledCarousel from "../../Carousel/Carousel";
 import ProjectCard from "../project-card/ProjectCard";
 import "./Projects.css";
 
@@ -35,7 +34,6 @@ const Projects = ({ isDark }) => {
                 project={project}
                 isRightCard={i % 2 === 0 ? false : true}
                 isDark={isDark}
-                // className={i > 3 ? "hidden-project" : ""}
               />
             );
           })}

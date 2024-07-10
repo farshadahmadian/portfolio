@@ -13,16 +13,7 @@
   align-items: center;
   margin: 0 0 0 auto;
   text-decoration: none;
-  /* z-index: 1; */
 }
-
-/* .btn-to-top:visited,
-.btn-to-top:link {
-}
-
-.btn-to-top:hover,
-.btn-to-top :active {
-} */
 
 .icon-up {
   width: 3rem;

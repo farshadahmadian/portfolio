@@ -63,9 +63,7 @@ const ContactForm = () => {
         </div>
         <button className="btn contact-form-btn" type="submit">
           <span>Send</span>
-          {/* <div className="icon-send-container"> */}
-          <img className="icon icon-send" src="./send3.png" alt="Send" />
-          {/* </div> */}
+          <img className="icon icon-send" src="./send.png" alt="Send" />
         </button>
       </form>
     </div>

@@ -15,10 +15,6 @@ function App() {
     setMenuOpen((prevState) => !prevState);
   };
 
-  // const closeModalHandler = function () {
-  //   setMenuOpen((prevState) => !prevState);
-  // };
-
   useEffect(() => {
     const handleKeyDown = (event) => {
       if (event.key === "Escape" && isMenuOpen)
@@ -29,7 +25,7 @@ function App() {
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [isMenuOpen]);
 
-  const preferedTheme = useMediaQuery(
+  useMediaQuery(
     { query: "(prefers-color-scheme: light)" },
     undefined,
     (isSystemDark) => setIsDark(isSystemDark)

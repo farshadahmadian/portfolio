@@ -1,5 +1,3 @@
-import { Placeholder } from "react-bootstrap";
-
 const Input = ({ className, type, name, placeHolder }) => {
   return (
     <div className="input-container">

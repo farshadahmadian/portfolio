@@ -26,7 +26,7 @@ const ModalMenu = ({ onCloseModal }) => {
         Contact
       </AnchorLink>
       <button onClick={onCloseModal} className="close-btn">
-        <img className="close-btn" src="./close2.png" alt="Close Button" />
+        <img className="close-btn" src="./close.png" alt="Close Button" />
       </button>
     </div>
   );

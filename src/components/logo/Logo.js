@@ -7,9 +7,7 @@ const Logo = () => {
 
   return (
     <>
-      <div className="logo-container" onClick={clickHandler}>
-        <img className="logo" src="./logo.png" alt="Logo" />
-      </div>
+      <div className="logo-container" onClick={clickHandler}></div>
     </>
   );
 };

@@ -3,10 +3,8 @@
   cursor: pointer;
   display: flex;
   justify-content: center;
-  /* opacity: 70%; */
 }
 
 .logo {
   width: 100%;
-  /* filter: contrast(70%) drop-shadow(1px 1px 1px #ffb8034a); */
 }
